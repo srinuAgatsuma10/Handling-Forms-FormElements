@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-25T06:18:31 IST" name="Default suite" finished-at="2025-03-25T06:18:39 IST" duration-ms="7497">
+  <suite started-at="2025-03-25T19:41:47 IST" name="Default suite" finished-at="2025-03-25T19:42:00 IST" duration-ms="13601">
     <groups>
     </groups>
-    <test started-at="2025-03-25T06:18:31 IST" name="Default test" finished-at="2025-03-25T06:18:39 IST" duration-ms="7497">
-      <class name="internetHerokuApp.HandlingForm">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:internetHerokuApp.HandlingForm@5bf0d49]" started-at="2025-03-25T06:18:31 IST" name="setUp" finished-at="2025-03-25T06:18:38 IST" duration-ms="6390" status="PASS">
+    <test started-at="2025-03-25T19:41:47 IST" name="Default test" finished-at="2025-03-25T19:42:00 IST" duration-ms="13601">
+      <class name="ultimateQA.HandlingForms">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ultimateQA.HandlingForms@5b7a5baa]" started-at="2025-03-25T19:41:47 IST" name="setUp" finished-at="2025-03-25T19:41:56 IST" duration-ms="9905" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="handlinForm()[pri:0, instance:internetHerokuApp.HandlingForm@5bf0d49]" started-at="2025-03-25T06:18:38 IST" name="handlinForm" finished-at="2025-03-25T06:18:39 IST" duration-ms="912" status="PASS">
+        <test-method signature="fromTwo()[pri:0, instance:ultimateQA.HandlingForms@5b7a5baa]" started-at="2025-03-25T19:41:57 IST" name="fromTwo" finished-at="2025-03-25T19:42:00 IST" duration-ms="3243" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- handlinForm -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:internetHerokuApp.HandlingForm@5bf0d49]" started-at="2025-03-25T06:18:39 IST" name="tearDown" finished-at="2025-03-25T06:18:39 IST" duration-ms="163" status="PASS">
+        </test-method> <!-- fromTwo -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ultimateQA.HandlingForms@5b7a5baa]" started-at="2025-03-25T19:42:00 IST" name="tearDown" finished-at="2025-03-25T19:42:00 IST" duration-ms="376" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- internetHerokuApp.HandlingForm -->
+      </class> <!-- ultimateQA.HandlingForms -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

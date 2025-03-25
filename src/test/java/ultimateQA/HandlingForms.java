@@ -45,9 +45,11 @@ public class HandlingForms {
 				.sendKeys("I'll became the king of the pirates");
 
 		WebElement condition = driver.findElement(By.xpath("//span[@class='et_pb_contact_captcha_question']"));
-		int a = Integer.parseInt(condition.getText().substring(1, 2));
-		int b = Integer.parseInt(condition.getText().substring(0, 1));
-		int result = a + b;
+		String sum = condition.getText().trim();
+		String[] parts = sum.split("\\+"); // Splitting by "+"
+		int num1 = Integer.parseInt(parts[0].trim());
+		int num2 = Integer.parseInt(parts[1].trim());
+		int result = num1 + num2;
 		String res = String.valueOf(result);
 		driver.findElement(By.xpath("//input[@name='et_pb_contact_captcha_1']")).sendKeys(res);
 		driver.findElement(By.xpath(
