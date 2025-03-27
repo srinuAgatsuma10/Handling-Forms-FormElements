@@ -2,38 +2,38 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-25T20:44:45 IST" name="Default suite" finished-at="2025-03-25T20:46:04 IST" duration-ms="78707">
+  <suite started-at="2025-03-27T22:40:29 IST" name="Default suite" finished-at="2025-03-27T22:40:52 IST" duration-ms="23175">
     <groups>
     </groups>
-    <test started-at="2025-03-25T20:44:45 IST" name="Default test" finished-at="2025-03-25T20:46:04 IST" duration-ms="78707">
+    <test started-at="2025-03-27T22:40:29 IST" name="Default test" finished-at="2025-03-27T22:40:52 IST" duration-ms="23175">
       <class name="demoQA.HandlingForms">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:demoQA.HandlingForms@4afcd809]" started-at="2025-03-25T20:44:45 IST" name="setUp" finished-at="2025-03-25T20:46:00 IST" duration-ms="75442" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:demoQA.HandlingForms@175c2241]" started-at="2025-03-27T22:40:29 IST" name="setUp" finished-at="2025-03-27T22:40:50 IST" duration-ms="20547" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="practiceForm()[pri:0, instance:demoQA.HandlingForms@4afcd809]" started-at="2025-03-25T20:46:00 IST" name="practiceForm" finished-at="2025-03-25T20:46:03 IST" duration-ms="2594" status="FAIL">
+        <test-method signature="practiceForm()[pri:0, instance:demoQA.HandlingForms@175c2241]" started-at="2025-03-27T22:40:50 IST" name="practiceForm" finished-at="2025-03-27T22:40:52 IST" duration-ms="2086" status="FAIL">
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[element click intercepted: Element <input type="text" id="dateOfBirthInput" class="form-control" value="25 Mar 2025"> is not clickable at point (605, 552). Other element would receive the click: <div>...</div>
+              <![CDATA[element click intercepted: Element <input type="text" id="dateOfBirthInput" class="form-control" value="27 Mar 2025"> is not clickable at point (630, 583). Other element would receive the click: <iframe id="google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0" name="google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0" title="3rd party ad content" width="970" height="100" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" aria-label="Advertisement" tabindex="0" allow="private-state-token-redemption;attribution-reporting" data-load-complete="true" style="border: 0px; vertical-align: bottom;" data-google-container-id="1"></iframe>
   (Session info: chrome=134.0.6998.118)
 Build info: version: '4.29.0', revision: '5fc1ec94cb'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b4fa8bcdad6275ebf9ecf5fc78cb97ab, clickElement {id=f.82050B0D59AC2D938CE3910B362EC45E.d.5041BAAA7669B7CAFBBE455A8EB2C099.e.18}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\ASUS\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53017}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53017/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (b4fa8bcdad6275ebf9ecf5fc78cb97ab)] -> xpath: //input[@id='dateOfBirthInput']]
-Session ID: b4fa8bcdad6275ebf9ecf5fc78cb97ab]]>
+Command: [e3c1ce422a310d4cdcae4c58358f25af, clickElement {id=f.B32A85F10C53F31B7DC53D1E87FB204A.d.E152675AD410D0F67E84480DA54B8AD2.e.29}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\ASUS\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58532}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58532/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e3c1ce422a310d4cdcae4c58358f25af)] -> xpath: //input[@id='dateOfBirthInput']]
+Session ID: e3c1ce422a310d4cdcae4c58358f25af]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input type="text" id="dateOfBirthInput" class="form-control" value="25 Mar 2025"> is not clickable at point (605, 552). Other element would receive the click: <div>...</div>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input type="text" id="dateOfBirthInput" class="form-control" value="27 Mar 2025"> is not clickable at point (630, 583). Other element would receive the click: <iframe id="google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0" name="google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0" title="3rd party ad content" width="970" height="100" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" aria-label="Advertisement" tabindex="0" allow="private-state-token-redemption;attribution-reporting" data-load-complete="true" style="border: 0px; vertical-align: bottom;" data-google-container-id="1"></iframe>
   (Session info: chrome=134.0.6998.118)
 Build info: version: '4.29.0', revision: '5fc1ec94cb'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b4fa8bcdad6275ebf9ecf5fc78cb97ab, clickElement {id=f.82050B0D59AC2D938CE3910B362EC45E.d.5041BAAA7669B7CAFBBE455A8EB2C099.e.18}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\ASUS\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53017}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53017/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (b4fa8bcdad6275ebf9ecf5fc78cb97ab)] -> xpath: //input[@id='dateOfBirthInput']]
-Session ID: b4fa8bcdad6275ebf9ecf5fc78cb97ab
+Command: [e3c1ce422a310d4cdcae4c58358f25af, clickElement {id=f.B32A85F10C53F31B7DC53D1E87FB204A.d.E152675AD410D0F67E84480DA54B8AD2.e.29}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\ASUS\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58532}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58532/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e3c1ce422a310d4cdcae4c58358f25af)] -> xpath: //input[@id='dateOfBirthInput']]
+Session ID: e3c1ce422a310d4cdcae4c58358f25af
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -80,7 +80,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- practiceForm -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:demoQA.HandlingForms@4afcd809]" started-at="2025-03-25T20:46:03 IST" name="tearDown" finished-at="2025-03-25T20:46:04 IST" duration-ms="584" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:demoQA.HandlingForms@175c2241]" started-at="2025-03-27T22:40:52 IST" name="tearDown" finished-at="2025-03-27T22:40:52 IST" duration-ms="459" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

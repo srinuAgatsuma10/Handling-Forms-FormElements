@@ -63,7 +63,7 @@ public class HandlingForms {
 
 		// Enter photo
 		driver.findElement(By.xpath("//input[@id='uploadPicture']"))
-				.sendKeys("C:\\Users\\ASUS\\Downloads\\@Getsesko.jpeg");
+				.sendKeys(System.getProperty("user.dir")+"\\ImagesForTest.jpeg");
 
 		// Enter current Address
 		driver.findElement(By.xpath("//textarea[@id='currentAddress']")).sendKeys("Vijayawada, Andhra Pradesh, India");
@@ -112,11 +112,16 @@ public class HandlingForms {
 		}
 	}
 
-//	public static void Subjects(WebDriver driver) {
-//		driver.findElement(By.xpath(
-//				"//div[contains(@class,'subjects-auto-complete__value-container subjects-auto-complete__value-container--is-multi css-1hwfws3')]"));
-//		
-//		// Debugger Issues in Selector Hub
-//	}
+	public static void Subjects(WebDriver driver) {
+//		WebElement subject = driver.findElement(By.xpath(
+//				"//div[@class='subjects-auto-complete__control css-yk16xz-control']"));
+		WebElement subject = driver.findElement(By.cssSelector(".subjects-auto-complete__control.css-yk16xz-control"));
+		subject.sendKeys("Maths");
+		driver.findElement(By.xpath("//div[@id='react-select-2-option-0']")).click();
+		subject.sendKeys("English");
+		driver.findElement(By.xpath("//div[@id='react-select-2-option-0']")).click();
+		
+		
+	}
 
 }
