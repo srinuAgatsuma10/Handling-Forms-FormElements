@@ -4,6 +4,7 @@ import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -20,12 +21,15 @@ public class LoginForm {
 		driver.get("https://www.tutorialspoint.com/selenium/practice/login.php");
 		driver.manage().window().maximize();
 	}
-
+	
 	@Test
 	public void Login() {
-		driver.findElement(By.xpath("//input[@id='email']")).sendKeys("monkey.d.luffy@gmail.com");
-		driver.findElement(By.xpath("//input[@id='password']")).sendKeys("OnePieceHunter");
-		driver.findElement(By.xpath("//input[@value='Login']")).click();
+		WebElement email = driver.findElement(By.xpath("//input[@id='email']"));
+		WebElement password = driver.findElement(By.xpath("//input[@id='password']"));
+		WebElement loginBtn = driver.findElement(By.xpath("//input[@value='Login']"));
+		email.sendKeys("monkey.d.luffy@gmail.com");
+		password.sendKeys("OnePieceHunter");
+		loginBtn.click();
 	}
 
 	@AfterClass

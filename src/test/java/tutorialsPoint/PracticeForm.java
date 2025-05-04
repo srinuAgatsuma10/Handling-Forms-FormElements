@@ -21,10 +21,10 @@ public class PracticeForm {
 		driver.get("https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php");
 		driver.manage().window().maximize();
 	}
-
+	
 	@Test
-	public void Login() {
-		
+	public void practiceForm() {
+				
 	}
 
 	@AfterClass

@@ -23,8 +23,17 @@ public class RegisterForm {
 	}
 
 	@Test
-	public void Login() {
-		
+	public void registerForm() {
+		WebElement firstName = driver.findElement(By.xpath("//input[@id='firstname']"));
+		WebElement lastName = driver.findElement(By.xpath("//input[@id='lastname']"));
+		WebElement enterEmail = driver.findElement(By.xpath("//input[@id='username']"));
+		WebElement enterPassword = driver.findElement(By.xpath("//input[@id='password']"));
+		WebElement registerBtn = driver.findElement(By.xpath("//input[@value='Register']"));
+		firstName.sendKeys("Naruto");
+		lastName.sendKeys("Uzumaki");
+		enterEmail.sendKeys("narutouzumaki7@gmail.com");
+		enterPassword.sendKeys("7Hokage");
+		registerBtn.click();
 	}
 
 	@AfterClass
