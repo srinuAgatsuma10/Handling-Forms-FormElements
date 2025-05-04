@@ -5,8 +5,8 @@
     <classes>
       <class name="tutorialsPoint.PracticeForm">
         <methods>
+          <include name="studentRegistrationForm"/>
           <include name="tearDown"/>
-          <include name="Login"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- tutorialsPoint.PracticeForm -->
