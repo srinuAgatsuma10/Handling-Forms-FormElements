@@ -39,7 +39,7 @@ public class PracticeForm {
 		driver.findElement(By.xpath("//input[@id='mobile']")).sendKeys("1234567890");
 		
 		// Enter Date of Birth
-		// driver.findElement(By.xpath("")).click();
+		driver.findElement(By.xpath("//input[@id='dob']")).sendKeys("12-02-2026");
 
 		// Enter subjects
 		driver.findElement(By.xpath("//input[@id='subjects']")).sendKeys("Java, Selenium, MySQL");
