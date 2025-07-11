@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-07T18:53:23 IST" name="Default suite" finished-at="2025-05-07T18:53:30 IST" duration-ms="7199">
+  <suite started-at="2025-07-11T11:03:25 IST" name="Default suite" finished-at="2025-07-11T11:03:33 IST" duration-ms="7915">
     <groups>
     </groups>
-    <test started-at="2025-05-07T18:53:23 IST" name="Default test" finished-at="2025-05-07T18:53:30 IST" duration-ms="7199">
-      <class name="tutorialsPoint.PracticeForm">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tutorialsPoint.PracticeForm@3754a4bf]" started-at="2025-05-07T18:53:23 IST" name="setUp" finished-at="2025-05-07T18:53:27 IST" duration-ms="4684" status="PASS">
+    <test started-at="2025-07-11T11:03:25 IST" name="Default test" finished-at="2025-07-11T11:03:33 IST" duration-ms="7915">
+      <class name="internetHerokuApp.ForgotPassWord">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:internetHerokuApp.ForgotPassWord@3754a4bf]" started-at="2025-07-11T11:03:25 IST" name="setUp" finished-at="2025-07-11T11:03:31 IST" duration-ms="6471" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="studentRegistrationForm()[pri:0, instance:tutorialsPoint.PracticeForm@3754a4bf]" started-at="2025-05-07T18:53:27 IST" name="studentRegistrationForm" finished-at="2025-05-07T18:53:29 IST" duration-ms="2045" status="PASS">
+        <test-method signature="forgotPassword()[pri:0, instance:internetHerokuApp.ForgotPassWord@3754a4bf]" started-at="2025-07-11T11:03:31 IST" name="forgotPassword" finished-at="2025-07-11T11:03:32 IST" duration-ms="894" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- studentRegistrationForm -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tutorialsPoint.PracticeForm@3754a4bf]" started-at="2025-05-07T18:53:29 IST" name="tearDown" finished-at="2025-05-07T18:53:30 IST" duration-ms="396" status="PASS">
+        </test-method> <!-- forgotPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:internetHerokuApp.ForgotPassWord@3754a4bf]" started-at="2025-07-11T11:03:32 IST" name="tearDown" finished-at="2025-07-11T11:03:33 IST" duration-ms="471" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- tutorialsPoint.PracticeForm -->
+      </class> <!-- internetHerokuApp.ForgotPassWord -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

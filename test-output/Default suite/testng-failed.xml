@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tutorialsPoint.PracticeForm">
+      <class name="internetHerokuApp.ForgotPassWord">
         <methods>
-          <include name="studentRegistrationForm"/>
-          <include name="tearDown"/>
+          <include name="forgotPassword"/>
           <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- tutorialsPoint.PracticeForm -->
+      </class> <!-- internetHerokuApp.ForgotPassWord -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
