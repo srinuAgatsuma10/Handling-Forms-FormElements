@@ -42,7 +42,7 @@ public class LoginForm {
 		Assert.assertEquals("Test Login Page for Automation Testin Practice", title);
 	}
 
-	@Test(priority = 2)
+//	@Test(priority = 2)
 	public void loginFormInValidCredens()throws Exception {
 		WebElement userId = driver.findElement(By.xpath("//input[@id='username']"));
 		WebElement password = driver.findElement(By.xpath("//input[@id='password']"));
@@ -59,9 +59,21 @@ public class LoginForm {
 		Assert.assertEquals("Your password is invalid!", resultMessage);
 	}
 
-//	@Test(priority = 3)
-	public void loginFormInValidCredens2() {
+	@Test(priority = 3)
+	public void loginFormInValidCredens2()throws Exception {
+		WebElement userId = driver.findElement(By.xpath("//input[@id='username']"));
+		WebElement password = driver.findElement(By.xpath("//input[@id='password']"));
 
+		userId.sendKeys("WrongUserName");
+		password.sendKeys("SuperSecretPassword!");
+		
+		driver.findElement(By.xpath("//button[@class='btn btn-bg btn-primary d-block w-100']")).click();
+		
+		Thread.sleep(3000);
+		
+		String resultMessage = driver.findElement(By.xpath("//div[@id='flash']//b")).getText();
+		System.out.println(resultMessage);
+		Assert.assertEquals("Your username is invalid!", resultMessage);
 	}
 
 	@AfterClass

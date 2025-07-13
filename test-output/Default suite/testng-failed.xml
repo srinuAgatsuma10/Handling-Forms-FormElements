@@ -6,8 +6,8 @@
       <class name="practiceExpandTesting.LoginForm">
         <methods>
           <include name="setUp"/>
+          <include name="loginFormInValidCredens2"/>
           <include name="tearDown"/>
-          <include name="loginFormInValidCredens"/>
         </methods>
       </class> <!-- practiceExpandTesting.LoginForm -->
     </classes>
