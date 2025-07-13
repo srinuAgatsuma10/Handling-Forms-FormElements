@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-11T11:03:25 IST" name="Default suite" finished-at="2025-07-11T11:03:33 IST" duration-ms="7915">
+  <suite started-at="2025-07-13T21:22:13 IST" name="Default suite" finished-at="2025-07-13T21:22:36 IST" duration-ms="23506">
     <groups>
     </groups>
-    <test started-at="2025-07-11T11:03:25 IST" name="Default test" finished-at="2025-07-11T11:03:33 IST" duration-ms="7915">
-      <class name="internetHerokuApp.ForgotPassWord">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:internetHerokuApp.ForgotPassWord@3754a4bf]" started-at="2025-07-11T11:03:25 IST" name="setUp" finished-at="2025-07-11T11:03:31 IST" duration-ms="6471" status="PASS">
+    <test started-at="2025-07-13T21:22:13 IST" name="Default test" finished-at="2025-07-13T21:22:36 IST" duration-ms="23506">
+      <class name="practiceExpandTesting.LoginForm">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:practiceExpandTesting.LoginForm@4afcd809]" started-at="2025-07-13T21:22:13 IST" name="setUp" finished-at="2025-07-13T21:22:29 IST" duration-ms="16224" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="forgotPassword()[pri:0, instance:internetHerokuApp.ForgotPassWord@3754a4bf]" started-at="2025-07-11T11:03:31 IST" name="forgotPassword" finished-at="2025-07-11T11:03:32 IST" duration-ms="894" status="PASS">
+        <test-method signature="loginFormValidCredens()[pri:1, instance:practiceExpandTesting.LoginForm@4afcd809]" started-at="2025-07-13T21:22:29 IST" name="loginFormValidCredens" finished-at="2025-07-13T21:22:36 IST" duration-ms="7007" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- forgotPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:internetHerokuApp.ForgotPassWord@3754a4bf]" started-at="2025-07-11T11:03:32 IST" name="tearDown" finished-at="2025-07-11T11:03:33 IST" duration-ms="471" status="PASS">
+        </test-method> <!-- loginFormValidCredens -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:practiceExpandTesting.LoginForm@4afcd809]" started-at="2025-07-13T21:22:36 IST" name="tearDown" finished-at="2025-07-13T21:22:36 IST" duration-ms="235" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- internetHerokuApp.ForgotPassWord -->
+      </class> <!-- practiceExpandTesting.LoginForm -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

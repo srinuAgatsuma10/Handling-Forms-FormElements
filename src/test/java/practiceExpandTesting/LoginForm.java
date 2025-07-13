@@ -2,8 +2,11 @@ package practiceExpandTesting;
 
 import java.time.Duration;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -21,9 +24,32 @@ public class LoginForm {
 		driver.manage().window().maximize();
 	}
 
-	@Test
-	public void loginForm() {
-		
+	@Test(priority = 1)
+	public void loginFormValidCredens() {
+		WebElement userId = driver.findElement(By.xpath("//input[@id='username']"));
+		WebElement password = driver.findElement(By.xpath("//input[@id='password']"));
+
+		String title = driver.getTitle();
+
+		userId.sendKeys("practice");
+		password.sendKeys("SuperSecretPassword!");
+
+		driver.findElement(By.xpath("//button[normalize-space()='Login']")).click();
+		System.out.println(driver.findElement(By.xpath("//div[@id='flash']//b")).getText());
+
+		driver.findElement(By.xpath("//a[@class='button secondary radius btn btn-danger']")).click();
+
+		Assert.assertTrue(true, title);
+	}
+
+//	@Test(priority = 2)
+	public void loginFormInValidCredens() {
+
+	}
+
+//	@Test(priority = 3)
+	public void loginFormInValidCredens2() {
+
 	}
 
 	@AfterClass
