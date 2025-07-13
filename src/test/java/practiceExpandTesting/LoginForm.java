@@ -24,7 +24,7 @@ public class LoginForm {
 		driver.manage().window().maximize();
 	}
 
-	@Test(priority = 1)
+//	@Test(priority = 1)
 	public void loginFormValidCredens() {
 		WebElement userId = driver.findElement(By.xpath("//input[@id='username']"));
 		WebElement password = driver.findElement(By.xpath("//input[@id='password']"));
@@ -39,12 +39,24 @@ public class LoginForm {
 
 		driver.findElement(By.xpath("//a[@class='button secondary radius btn btn-danger']")).click();
 
-		Assert.assertTrue(true, title);
+		Assert.assertEquals("Test Login Page for Automation Testin Practice", title);
 	}
 
-//	@Test(priority = 2)
-	public void loginFormInValidCredens() {
+	@Test(priority = 2)
+	public void loginFormInValidCredens()throws Exception {
+		WebElement userId = driver.findElement(By.xpath("//input[@id='username']"));
+		WebElement password = driver.findElement(By.xpath("//input[@id='password']"));
 
+		userId.sendKeys("practice");
+		password.sendKeys("WrongPassword");
+
+		driver.findElement(By.xpath("//button[@class=\"btn btn-bg btn-primary d-block w-100\"]")).click();
+		
+		Thread.sleep(3000);
+		
+		String resultMessage = driver.findElement(By.xpath("//div[@id='flash']//b")).getText();
+		System.out.println(resultMessage);
+		Assert.assertEquals("Your password is invalid!", resultMessage);
 	}
 
 //	@Test(priority = 3)

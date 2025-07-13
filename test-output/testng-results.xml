@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-13T21:22:13 IST" name="Default suite" finished-at="2025-07-13T21:22:36 IST" duration-ms="23506">
+  <suite started-at="2025-07-13T21:38:02 IST" name="Default suite" finished-at="2025-07-13T21:38:12 IST" duration-ms="10614">
     <groups>
     </groups>
-    <test started-at="2025-07-13T21:22:13 IST" name="Default test" finished-at="2025-07-13T21:22:36 IST" duration-ms="23506">
+    <test started-at="2025-07-13T21:38:02 IST" name="Default test" finished-at="2025-07-13T21:38:12 IST" duration-ms="10614">
       <class name="practiceExpandTesting.LoginForm">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:practiceExpandTesting.LoginForm@4afcd809]" started-at="2025-07-13T21:22:13 IST" name="setUp" finished-at="2025-07-13T21:22:29 IST" duration-ms="16224" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:practiceExpandTesting.LoginForm@175c2241]" started-at="2025-07-13T21:38:02 IST" name="setUp" finished-at="2025-07-13T21:38:09 IST" duration-ms="6928" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginFormValidCredens()[pri:1, instance:practiceExpandTesting.LoginForm@4afcd809]" started-at="2025-07-13T21:22:29 IST" name="loginFormValidCredens" finished-at="2025-07-13T21:22:36 IST" duration-ms="7007" status="PASS">
+        <test-method signature="loginFormInValidCredens()[pri:2, instance:practiceExpandTesting.LoginForm@175c2241]" started-at="2025-07-13T21:38:09 IST" name="loginFormInValidCredens" finished-at="2025-07-13T21:38:12 IST" duration-ms="3385" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginFormValidCredens -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:practiceExpandTesting.LoginForm@4afcd809]" started-at="2025-07-13T21:22:36 IST" name="tearDown" finished-at="2025-07-13T21:22:36 IST" duration-ms="235" status="PASS">
+        </test-method> <!-- loginFormInValidCredens -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:practiceExpandTesting.LoginForm@175c2241]" started-at="2025-07-13T21:38:12 IST" name="tearDown" finished-at="2025-07-13T21:38:12 IST" duration-ms="265" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
