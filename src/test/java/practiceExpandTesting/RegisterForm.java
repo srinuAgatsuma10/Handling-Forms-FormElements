@@ -2,6 +2,7 @@ package practiceExpandTesting;
 
 import java.time.Duration;
 
+import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -25,24 +26,24 @@ public class RegisterForm {
 	}
 
 	@Test
-	public void registerForm()throws Exception {
+	public void registerForm() throws Exception {
 		// User name
 		WebElement username = driver.findElement(By.xpath("//input[@id='username']"));
-		String user = "kingluffy";
+		String user = nameGenerate();
 		username.sendKeys(user.toLowerCase());
 		// Password
+		String genPass = passwordGenerator();
 		WebElement password = driver.findElement(By.xpath("//input[@id='password']"));
-		password.sendKeys("KingLuffy!");
+		password.sendKeys(genPass);
 		// Confirm Password
 		WebElement confPassword = driver.findElement(By.xpath("//input[@id='confirmPassword']"));
-		String pass = "KingLuffy!";
-		confPassword.sendKeys(pass);
+		confPassword.sendKeys(genPass);
 		Thread.sleep(3000);
 		try {
-		// Register
-		driver.findElement(By.xpath("//button[normalize-space()='Register']")).click();
-		loginFunctionality(driver, user, pass);
-		}catch(Exception e) {
+			// Register
+			driver.findElement(By.xpath("//button[normalize-space()='Register']")).click();
+			loginFunctionality(driver, user, genPass);
+		} catch (Exception e) {
 			e.printStackTrace();
 			System.out.println("Please check the WebElment Xpath");
 		}
@@ -53,7 +54,7 @@ public class RegisterForm {
 		driver.quit();
 	}
 
-	public static void loginFunctionality(WebDriver driver, String user, String pass)throws Exception {
+	public static void loginFunctionality(WebDriver driver, String user, String pass) throws Exception {
 		WebElement userId = driver.findElement(By.xpath("//input[@id='username']"));
 		WebElement password = driver.findElement(By.xpath("//input[@id='password']"));
 
@@ -72,6 +73,19 @@ public class RegisterForm {
 			e.printStackTrace();
 			System.out.println("Please check element's xpath");
 		}
+	}
+
+	public static String nameGenerate() {
+		String randomName = RandomStringUtils.randomAlphabetic(5);
+		return randomName.toLowerCase();
+	}
+
+	public static String passwordGenerator() {
+		String alphabaticsUpper = RandomStringUtils.randomAlphabetic(3);
+		String alphabaticsLower = RandomStringUtils.randomAlphabetic(4);
+
+		String totalPass = (alphabaticsUpper.toUpperCase() + alphabaticsLower.toLowerCase());
+		return totalPass;
 	}
 
 }
